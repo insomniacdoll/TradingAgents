@@ -11,6 +11,7 @@ def create_fundamentals_analyst(llm, toolkit):
 
         if toolkit.config["online_tools"]:
             tools = [toolkit.get_fundamentals_openai]
+            # tools = []
         else:
             tools = [
                 toolkit.get_finnhub_company_insider_sentiment,
