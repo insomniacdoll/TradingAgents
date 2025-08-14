@@ -152,6 +152,9 @@ def select_shallow_thinking_agent(provider) -> str:
         "aliyun": [
             ("Qwen-flash - Fast and quick tasks", "qwen-flash"),
         ],
+        "volcengine": [
+            ("Doubao-Seed-Flash - Fast and efficient for quick tasks", "doubao-seed-1-6-flash-250715")
+        ],
         "ollama": [
             ("llama3.1 local", "llama3.1"),
             ("llama3.2 local", "llama3.2"),
@@ -217,6 +220,9 @@ def select_deep_thinking_agent(provider) -> str:
         "aliyun": [
             ("Qwen-Plus - Full advanced reasoning model", "qwen-plus"),
         ],
+        "volcengine": [
+            ("Doubao-Seed - Full advanced reasoning model", "doubao-seed-1-6-250615"),
+        ],
         "ollama": [
             ("llama3.1 local", "llama3.1"),
             ("qwen3", "qwen3"),
@@ -254,6 +260,7 @@ def select_llm_provider() -> tuple[str, str]:
         ("Google", "https://generativelanguage.googleapis.com/v1"),
         ("Openrouter", "https://openrouter.ai/api/v1"),
         ("Aliyun", "https://dashscope.aliyuncs.com/compatible-mode/v1"),
+        ("Volcengine", "https://ark.cn-beijing.volces.com/api/v3"),
         ("Ollama", "http://localhost:11434/v1"),        
     ]
     

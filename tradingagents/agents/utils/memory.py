@@ -9,6 +9,8 @@ class FinancialSituationMemory:
             self.embedding = "nomic-embed-text"
         elif config["backend_url"] == "https://dashscope.aliyuncs.com/compatible-mode/v1":
             self.embedding = "text-embedding-v4"
+        elif config["backend_url"] == "https://ark.cn-beijing.volces.com/api/v3":
+            self.embedding = "doubao-embedding-vision-250615"
         else:
             self.embedding = "text-embedding-3-small"
         self.client = OpenAI(base_url=config["backend_url"])
